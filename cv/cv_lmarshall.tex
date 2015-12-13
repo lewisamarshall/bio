@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage{currvita}
+\usepackage[margin=1in]{geometry}
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{charter}
+\usepackage{multibib}
+%\renewcommand{\familydefault}{phv}
+%\usepackage[simpsons]{mathdesign}
+%\usepackage[T1]{fontenc}
+
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+		
+\newcites{ref}{foo}
+\newcites{conf}{Conference Publications}
+\newcites{talks}{Conference Talks}
+\newcites{inprep}{In Preparation}
+
+\renewcommand*{\cvbibname}{}
+
+
+
+\begin{document}
+\begin{cv}{Lewis A. Marshall}
+  \begin{cvlist}{Contact}
+    \item 237 Ayrshire Farm Lane, \#103\\
+      Stanford, CA, USA 94305-7123
+    \item Mobile: +1-650-391-8463\\
+      E-mail: \texttt{\href{mailto:lamars@stanford.edu}{lamars@stanford.edu}}
+  \end{cvlist}
+  
+  \begin{cvlist}{Citizenship}
+    \item United States of America
+  \end{cvlist}
+  
+  \begin{cvlist}{Education}
+    \item[2008--present] Stanford University\\
+      Ph.D. Candidate, Chemical Engineering (degree expected June 2013)\\
+      Advisor: \href{http://microfluidics.stanford.edu}{Juan G. Santiago}
+    \item[2004--2008] University of Minnesota\\
+      B.S., Chemical Engineering\\
+  \end{cvlist}
+
+\begin{cvlist}{Research Focus}
+	\item Electrokinetics in microfludics.
+	Nucleic acid purification from blood using isotachophoresis.
+	Scaling microfluidic devices for isotachophoresis.
+\end{cvlist}
+
+
+\setlength{\cvlabelwidth}{1em}
+\renewcommand*{\bibindent}{1.5em}
+% Do bibaddtoleftmargin instead of biblabelsep if you're
+% not using manybib or openbib
+%\renewcommand*{\bibaddtoleftmargin}{1.5em}
+
+\begin{cvlist}{Publications}
+    \item \textbf{Journal Papers}
+  \nociteref{Marshall:wh}
+  \nociteref{Marshall:2011bw}
+  \nociteref{GarciaSchwarz:2011hj}
+  \nociteref{Persat:2009wc}
+
+  \bibliographystyleref{unsrt}
+  \bibliographyref{cv_lmarshall}
+
+  \item \textbf{Conference Papers} 
+
+  \nociteconf{Marshall:wk}
+  \nociteconf{Wu:tm}
+  \nociteconf{suss2009concentration}
+  \bibliographystyleconf{unsrt}
+  \bibliographyconf{cv_lmarshall}
+
+  \item \textbf{Conference Talks} 
+  \nocitetalks{Marshall:aiche2012}
+  \nocitetalks{Marshall:utas2011}
+  \nocitetalks{Marshall:MSB2013}
+
+
+  \bibliographystyletalks{unsrt}
+  \bibliographytalks{cv_lmarshall}
+
+  \item \textbf{In Preparation} 
+  \nociteinprep{20ul_device}
+  \nociteinprep{survey}
+  \nociteinprep{design}
+
+  \bibliographystyleinprep{unsrt}
+  \bibliographyinprep{cv_lmarshall}
+\end{cvlist}
+
+
+
+  \begin{cvlist}{Undergraduate Research}
+    \item Undergraduate Researcher\\
+		Wei Shu Hu, microarray fabrication for \emph{S. coelicolor}. 
+		
+	\item Undergraduate Researcher\\
+		Alon McCormick, polymer curing via pulsed electron beam.
+  \end{cvlist}
+
+
+  \begin{cvlist}{Teaching}
+    \item Teaching assistant\\
+      Chemical Engineering 185A: Chemical Engineering Laboratory\\
+      Autumn 2009, Autumn 2010
+
+		Mechanical Engineering 354: Experimental Methods in Microfluidics\\
+		Autumn 2011, Autumn 2012
+  \end{cvlist}
+  
+  \begin{cvlist}{Languages}
+    \item English (native)\\
+  \end{cvlist}
+  
+  \begin{cvlist}{Service}
+    \item[2009--2011] Atheists, Humanists, Agnostics @ Stanford.\\
+      President (2010--2011), Publicist (2009-2010)\\
+
+    \item[2009--2010] Campus Atheists, Skeptics, and Humanists @ University of Minnesota\\
+      Student Government Representative\\
+
+	\item[2011] Stanford Progressive\\
+      Content Editor\\
+
+	\item[2012] Stanford Static\\
+      Staff Writer\\
+
+  \end{cvlist}
+  
+	%   \begin{cvlist}{References}
+	%     \item Juan G. Santiago (Advisor)\\
+	%       \texttt{\href{mailto:juan.santiago@stanford.edu}{juan.santiago@stanford.edu}}
+	% \item Further references available upon request. 
+	%   \end{cvlist}
+
+\end{cv}
+\end{document}
+
+\endinput
