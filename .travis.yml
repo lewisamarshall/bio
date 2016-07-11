@@ -7,19 +7,14 @@ addons:
     - dvipng
     - texlive-latex-recommended
     - texlive-bibtex-extra
-        
 script:
 - mkdir _build
 - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build cv/lmarshall_cv.tex
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build resume/lmarshall_resume.tex
-
 deploy:
   provider: releases
   api_key:
-    secure: [YOUR KEY]
-  file:
-  - _build/lmarshall_cv.pdf
-  - _build/lmarshall_resume.pdf
+    secure: L4dDfvCDkyOC3L+Wp8Z0W0NaAnzj9xP3i+ppDWN6RV9P5DuTC+GZDKL54WyPnlCkGUzeWdLkhD7BiLaWhpjS5afKdmFKqyrZ6qD10Hwi2ClJj0cu3EgZ0WFyYiU5OFnEWeoMH7PRVSW/IFuwQdNg8Y0MiDOPydgg8+2iuXLSHNrHj1UbNz7tSWk9zR8gfHzqlRRMLD04D9GfCfnlrKH7g/tPVBnBU8CTj9kNjk7t3C+e8B/2Olj4BQ1ycbVMoHfks0WKzW5o8VCBvszl+RBm3OYsCcrUc64YV+pnjb69HZIj6T3OpaUzjxJPfiuviBk859sCBeKkY3dZr5CInz4wcgRvZbCMSow2CeicOdLpdKFmTcsB9RmN/+O0YCFdIglhLvRODNK27BlAFXmGOck0TAYPZeT4S5TwdNWwNvnQNwlWHyLik9POZ4QHuzXf6zIP2gTU+jfiNz7ry8xMkyVM3aikqQ6lDWbGn1BHHqg53CNkxP3FzXCI2AvYkibKPhtYWstr7DQ2UK+LaYg3uQiNutudM3OwCB8d3Mv7sBvbQs4TPvlFukQDExqCR3Z0Q/6RMiS8UgRNxsJbs1P5P5hLLWJ/LLbGkXcRoyabo3hhfQUD/qidCgTEqgv+ThzvCGnpEMfm/dB7+PY+G1peISOO1SpcpNL2uixQHZgvt6bsUXQ=
+  file: _build/lmarshall_cv.pdf
   skip_cleanup: true
   on:
-    tags: true
+    repo: lewisamarshall/bio
