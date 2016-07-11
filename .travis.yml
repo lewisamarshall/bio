@@ -6,6 +6,7 @@ addons:
     - texlive-fonts-extra
     - dvipng
     - texlive-latex-recommended
+    - texlive-bibtex-extra
         
 script:
 - mkdir _build
