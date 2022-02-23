@@ -1,4 +1,7 @@
 \documentclass{res}
+% \usepackage{currvita}
+\usepackage{cite}
+
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 \usepackage[T1]{fontenc}
@@ -9,14 +12,85 @@
 
 \name{Lewis A. Marshall\\[12pt]}     % the \\[12pt] adds a blank
 
-\address{\bf  Address\\40049 Fremont Blvd.\\Apt. 710\\Fremont, CA 94538\\(650) 391-8463}
+\address{\bf  Address\\ 1125 Court Street \\ Alameda, CA 94538 \\ (650) 391-8463}
 
 \address{\bf  Citizenship\\United States \\ \\ \bf E-Mail \\ lewis.a.marshall@gmail.com}
 
 \begin{resume}
 
-\section{JOB OBJECTIVE}
-    A postdoctoral or comparable research position developing microfluidic devices and techniques, with emphasis on electrokinetics and capillary phenomena.
+\section{OBJECTIVE}
+    Lead an diverse team to improve human health using microfluidics.
+
+
+\section{EXPERIENCE}
+   \vspace{-0.1in}
+
+   \subsection{Purigen Biosystems, Pleasanton CA}
+   \vspace{-0.1in}
+    First employee, system architect and product development lead to
+    commercialize nucleic acid purification using isotachophoresis (ITP).
+   \vspace{-0.1in}
+
+   \begin{tabbing}
+   \hspace{2.1in}\= \hspace{2.9in}\= \kill
+   Vice President, R\&D  \> July~2021-Present \\
+   Director of Fluidics \> July~2019-July~2021 \\
+   Senior Manager, Fluidics \> Jan~2018-July~2019\\
+   Lead Engineer        \>July~2013-Jan~2018 \\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+
+   \vspace{-0.1in}
+    \subsubsection{Leadership}
+       \begin{itemize}
+        \item Managed a 15-member R\&D team and \$5M annual budget through the COVID-19 pandemic
+        \item Created a sustainable on-call structure for customer through the R\&D team.
+        \item Started a journal club to expose the team to the technological roots of the system.
+       \end{itemize}
+   \vspace{-0.1in}
+    \subsubsection{Product Development}
+      \begin{itemize}
+       \item Integrated separate biological and microfluidic groups into one product-first group.
+       \item Led the product teams for Purigen's two highest selling applications.
+      \end{itemize}
+   \vspace{-0.1in}
+    \subsubsection{System Architecture}
+      \begin{itemize}
+        \item Designed and prototyped microfluidic devices, including the device used to launch Purigen's first product.
+        \item Designed the interfaces between the Purigen Ionic instrument and the microfluidic device, including future-proofing features for a long-term roadmap.
+      \end{itemize}
+   \vspace{-0.1in}
+    \subsubsection{Software Development}
+      \begin{itemize}
+        \item Wrote and maintained "pure", the business logic for the Purigen Ionic instrument.
+        \item Created and maintained the self-test suite for the Purigen Ionic to simplify manufacturing process.
+      \end{itemize}
+   \vspace{-0.1in}
+    \subsubsection{Data Analysis}
+      \begin{itemize}
+        \item Created a bioinformatics pipeline to identify Purigen's advantage in coverage uniformity vs competitors.
+        \item Wrote automated reporting infrastructure to charactarize individual instrument runs.
+        \item Wrote data aggregation software to compile metrics from thousands of individual samples.
+      \end{itemize}
+
+   % \begin{tabbing}
+   % \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
+   %  {\bf Graduate Researcher} \>Stanford Microfluidic Laboratory    \>2009-2013\\
+   %                           \>Stanford, CA
+   % \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   %  Developed microfluidic devices and techniques for purification of nucleic acids from blood and other biological fluids using electrophoretic techniques. Performed molecular biological assays for nucleic acid analysis. Performed extensive microscopy and image analysis, including particle image velocimetry (PIV). Designed and fabricated PDMS and polystyrene microfluidic devices.
+   % \begin{tabbing}
+
+   % \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
+   %  {\bf Intern} \>Metropolitan Council Wastewater Treatment \>  Summer 2008\\
+   %                        \>St. Paul, MN
+   % \end{tabbing}\vspace{-20pt}
+   %  Analyzed centrate for foaming and settling of grit. Developed recommendations for improving centrifugation performance.
+   % \begin{tabbing}%
+   % \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
+   % {\bf Undergraduate Researcher}  \>Hu Group, University of Minnesota \>   2005-2007\\
+   %                        \>Minneapolis, MN
+   % \end{tabbing}\vspace{-20pt}
+   %  Culture of CHO cells, microarray fabrication. Extensive use of polymerase chain reaction (PCR).
 
 \section{EDUCATION}
 		Stanford University, 2008--2013 \\
@@ -25,52 +99,35 @@
 
 		University of Minnesota, 2004--2008 \\
   		B.S., Chemical Engineering\\
+      Research Advisor: Wei-Shou Hu
+
+ \section{OPEN SOURCE}
+   \begin{itemize}
+     \item \textbf{Ionize} github.com/lewisamarshall/ionize\\
+   Ionize is an object oriented library for calculating the properties of
+   aqueous solutions, including corrections for temperature, ionic strength, and ion-ion interactions.
+ \end{itemize}
+
+ \section{SELECTED PUBLICATIONS}
+  \begin{itemize}
+  \item Rogacs, A.; Marshall, L.A. ; Santiago, J.C. Purification of nucleic acids using isotachophoresis. Journal of Chromatography A \textbf{2014}, 1335, 105–120.
+  \item Marshall, L.A.; Rogacs, A.; Meinhart, C.D.; Santiago, J.G. An injection molded microchip for nucleic acid purification from 25 microliter samples using isotachophoresis. Journal of Chromatography A \textbf{2014}, 1331, 139-142.
+\end{itemize}
+
+ \section{SKILLS}
+   \begin{itemize}
+     \item \textbf{Project Management}	Lead projects transparently to schedule while updating with the latest technical information.
+     \item \textbf{Hiring}	Experienced leading hiring committees using transparent, modern hiring practices.
+     \item \textbf{Programming}	Fluent in Python. Experienced managing contractors and in-house programmers to build a complete system.
+     \item \textbf{Version Control} Experienced creating and managing Github repositories.
+   \end{itemize}
 
 
-\section{EXPERIENCE}
-   \vspace{-0.1in}
+ \section{OTHER INTERESTS}
+   \begin{itemize}
+     \item \textbf{Woodworking}	I use hand tools and traditional techniques to make American vernacular furniture.
+   \end{itemize}
 
-   \begin{tabbing}
-   \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
-    {\bf Lead Engineer} \>Purigen Biosystems  \>July~2013-Present\\
-                             \>Pleasanton, CA
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Working to commercialize a nucleic acid extraction technique. Designs and tests microfluidic chips for nucleic acid purification.
-
-   \begin{tabbing}
-   \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
-    {\bf Graduate Researcher} \>Stanford Microfluidic Laboratory    \>2009-Present\\
-                             \>Stanford, CA
-   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Developed microfluidic devices and techniques for purification of nucleic acids from blood and other biological fluids using electrophoretic techniques. Performed molecular biological assays for nucleic acid analysis. Performed extensive microscopy and image analysis, including particle image velocimetry (PIV). Designed and fabricated PDMS and polystyrene microfluidic devices.
-   \begin{tabbing}
-
-   \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
-    {\bf Intern} \>Metropolitan Council Wastewater Treatment \>  Summer 2008\\
-                          \>St. Paul, MN
-   \end{tabbing}\vspace{-20pt}
-    Analyzed centrate for foaming and settling of grit. Developed recommendations for improving centrifugation performance.
-   \begin{tabbing}%
-   \hspace{2.1in}\= \hspace{2.9in}\= \kill % set up two tab positions
-   {\bf Undergraduate Researcher}  \>Hu Group, University of Minnesota \>   2005-2007\\
-                          \>Minneapolis, MN
-   \end{tabbing}\vspace{-20pt}
-    Culture of CHO cells, microarray fabrication. Extensive use of polymerase chain reaction (PCR).
-
-
- \section{COMPUTER SKILLS}
- 	\subsection{Programming}
- 	Proficient in Python.\\
-  Moderate proficiency in Matlab and Javascript.\\
-  www.github.com/lewisamarshall
- 	\subsection{CAD}
- 	Used Autocad and Draftsight to make 2D mask designs and general schematics.\\
- 	Used AutoDesk Inventor to design chips for both 3D printing and injection molding,
- 	as well as to generate 2D drawings for machining based on 3D models.
-
- \section{EXTRACURRICULAR ACTIVITIES}
-     Officer, Atheists, Humanists, and Agnostics @ Stanford, 2009-2011\\
-     Staff Writer, Stanford Static, 2012\\
 
 \end{resume}
 \end{document}
